@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "todo_collections",
+  "info": {
+    "singularName": "todo-collection",
+    "pluralName": "todo-collections",
+    "displayName": "todo-collection"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  }
+}

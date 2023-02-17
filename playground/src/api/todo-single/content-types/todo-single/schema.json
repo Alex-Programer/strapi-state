@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "todo_singles",
+  "info": {
+    "singularName": "todo-single",
+    "pluralName": "todo-singles",
+    "displayName": "todo-single"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  }
+}
