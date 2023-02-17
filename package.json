@@ -1,0 +1,51 @@
+{
+  "name": "strapi-state",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.13.4",
+  "description": "state manager for strapi",
+  "funding": "https://github.com/sponsors/Alex-Programer",
+  "homepage": "https://github.com/Alex-Programer/strapi-state",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alex-Programer/strapi-state"
+  },
+  "bugs": "https://github.com/Alex-Programer/strapi-state/issues",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "tsup && esno scripts/postbuild.ts",
+    "dev": "tsup --watch src",
+    "prepublishOnly": "npm run build",
+    "test": "vitest",
+    "test:update": "vitest --u"
+  },
+  "devDependencies": {
+    "esno": "^0.16.3",
+    "rollup": "^3.15.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.5"
+  }
+}
